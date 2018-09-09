@@ -1,0 +1,20 @@
+<h1 align="center">COUNT!</h1>
+
+<h2>There are {{count}} Words!</h2>
+<form action="{% url 'home' %}">
+
+    <br/>
+    <input type="submit" value="Try Again!"/>
+</form>
+<br/>
+
+<h3>Entered string:<br/><em>{{string}}</em></h3>
+<br/>
+
+<h2 align="center">Word Count!</h2>
+<hr/>
+
+{% for word, counttotal in sortedwords %}
+    <h2>{{word}} - {{counttotal}}</h2>
+
+{% endfor %}

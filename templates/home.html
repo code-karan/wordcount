@@ -1,0 +1,15 @@
+<h1 align = 'center'><i>Welcome to your Homepage KARAN!</i></h1>
+<br/><br/>
+<h5>Enter some text here</h5>
+<form action="{% url 'count' %}">
+
+    <textarea cols ="80" rows ="10" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!"/>
+</form>
+
+<form action="{% url 'about' %}">
+
+    <br/>
+    <input type="submit" value="About us!"/>
+</form>
